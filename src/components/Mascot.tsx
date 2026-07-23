@@ -1,5 +1,5 @@
 import { motion, type TargetAndTransition, type Variants } from 'framer-motion';
-import mascotImage from '../../Assets/Mascot.png';
+import mascotImage from '../../Assets/clean_mascot.png';
 
 export type MascotState = 'idle' | 'thinking' | 'working' | 'waiting' | 'error';
 
