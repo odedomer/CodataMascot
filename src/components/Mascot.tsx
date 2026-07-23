@@ -61,7 +61,7 @@ export default function Mascot({ state = 'idle', size = 180, className }: Mascot
           alt="AI mascot"
           animate={imageAnimation}
           draggable={false}
-          style={{ width: '110%', height: '110%', objectFit: 'cover', filter: 'drop-shadow(0 18px 38px rgba(0,0,0,0.12))' }}
+          style={{ width: '30%', height: '30%', objectFit: 'cover', filter: 'drop-shadow(0 18px 38px rgba(0,0,0,0.12))' }}
         />
       </div>
     </motion.div>
