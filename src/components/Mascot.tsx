@@ -46,14 +46,18 @@ export default function Mascot({ state = 'idle', size = 180, className }: Mascot
   return (
     <motion.div
       className={className}
-      animate={containerAnimation}
+      variants={containerVariants}
+      animate={state}
+      initial={false}
       style={{ width: size, height: size, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
     >
       <div className="mascot-wrapper" style={{ width: '92%', height: '92%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <motion.img
           src={mascotImage}
           alt="AI mascot"
-          animate={imageAnimation}
+          variants={imageVariants}
+          animate={state}
+          initial={false}
           draggable={false}
           style={{ width: '30%', height: '30%', objectFit: 'cover', filter: 'drop-shadow(0 18px 38px rgba(0,0,0,0.12))' }}
         />
