@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.DS_Store
+.env
+.env.*
+coverage/
+*.log
+/.vite/
+/.idea/
+.vscode/
+tsconfig.tsbuildinfo
+tsconfig.node.tsbuildinfo
+package-lock.json
+.cache/
