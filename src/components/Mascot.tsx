@@ -45,7 +45,7 @@ export default function Mascot({ state = 'idle', size = 180, className }: Mascot
 
   return (
     <motion.div
-      className={className}
+      className={`mascot ${className ?? ''} mascot--${state}`}
       variants={containerVariants}
       initial="idle"
       animate={state}

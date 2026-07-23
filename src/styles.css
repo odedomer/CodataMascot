@@ -87,6 +87,46 @@ button {
   display: block;
 }
 
+/* CSS fallback animations tied to state class */
+.mascot--working .mascot-wrapper img {
+  animation: mascot-rotate 2.6s linear infinite;
+}
+
+.mascot--thinking .mascot-wrapper img {
+  animation: mascot-thinking 8s ease-in-out infinite;
+}
+
+.mascot--waiting .mascot-wrapper img {
+  animation: mascot-breathe 2.2s ease-in-out infinite;
+}
+
+.mascot--error .mascot-wrapper img {
+  animation: mascot-error 0.9s ease-in-out 1;
+}
+
+@keyframes mascot-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes mascot-thinking {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-4px) rotate(120deg); }
+  100% { transform: translateY(0) rotate(360deg); }
+}
+
+@keyframes mascot-breathe {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.7); }
+  100% { transform: scale(1); }
+}
+
+@keyframes mascot-error {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(-30deg); }
+  100% { transform: rotate(0deg); }
+}
+
 .controls {
   display: flex;
   flex-wrap: wrap;
